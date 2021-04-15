@@ -46,8 +46,26 @@ test('There is no I in team', () => {
 })
 
 //Array
-test('Admin should be in username ', () => {
-   usernames = ['faris', 'kanbur', 'cem']
-    expect(usernames).toContain('fariS');
-})
+// test('Admin should be in username ', () => {
+//    usernames = ['faris', 'kanbur', 'cem']
+//     expect(usernames).toContain('fariS');
+// })
 
+// Working with async data
+
+// 1-Promise
+test('User fetched name should be Leanne Graham', () => {
+    expect.assertions(1);
+    return functions.fetchUser()
+    .then(data => {
+        expect(data.name).toEqual('Leanne Graham');
+    })
+});
+
+// 2-Async Await
+test('User fetched name should be Leanne Graham', async() => {
+    expect.assertions(1);
+    const data = await functions.fetchUser();
+    expect(data.name).toEqual('Leanne Graham');
+   
+});
