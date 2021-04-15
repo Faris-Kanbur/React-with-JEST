@@ -1,0 +1,23 @@
+{
+  "name": "JEST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faris-Kanbur/React-with-JEST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faris-Kanbur/React-with-JEST/issues"
+  },
+  "homepage": "https://github.com/Faris-Kanbur/React-with-JEST#readme",
+  "devDependencies": {
+    "jest": "^25.5.4"
+  }
+}
